@@ -1,8 +1,5 @@
 # Levarti Code challenge
 
-## Getting Started:
-
-``` pod install```
 
 ## Tech 
 
