@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		920723A723E7DCD100017FBE /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920723A623E7DCD100017FBE /* PhotoCell.swift */; };
+		920723A923E9013D00017FBE /* UserStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920723A823E9013D00017FBE /* UserStateManager.swift */; };
+		920F636223E789A5009CC02E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920F636123E789A5009CC02E /* AppDelegate.swift */; };
+		920F636923E789A5009CC02E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 920F636723E789A5009CC02E /* Main.storyboard */; };
+		920F636B23E789A8009CC02E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 920F636A23E789A8009CC02E /* Assets.xcassets */; };
+		920F636E23E789A8009CC02E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 920F636C23E789A8009CC02E /* LaunchScreen.storyboard */; };
+		920F637A23E7C3FA009CC02E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920F637923E7C3FA009CC02E /* LoginViewController.swift */; };
+		920F637C23E7C848009CC02E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920F637B23E7C848009CC02E /* LoginViewModel.swift */; };
+		920F637E23E7CE7D009CC02E /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920F637D23E7CE7D009CC02E /* PhotosViewController.swift */; };
+		920F638023E7CE8F009CC02E /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920F637F23E7CE8F009CC02E /* Photo.swift */; };
+		920F638223E7CF58009CC02E /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920F638123E7CF58009CC02E /* APIService.swift */; };
+		920F638423E7D003009CC02E /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920F638323E7D003009CC02E /* PhotosViewModel.swift */; };
+		9587ADAFF3DF8EE4755AB212 /* Pods_Levarti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FDD7348230EE6CE77D165C /* Pods_Levarti.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21FDD7348230EE6CE77D165C /* Pods_Levarti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Levarti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FECC9AEFF0B7EE336B91197 /* Pods-Levarti.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Levarti.debug.xcconfig"; path = "Target Support Files/Pods-Levarti/Pods-Levarti.debug.xcconfig"; sourceTree = "<group>"; };
+		920723A623E7DCD100017FBE /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		920723A823E9013D00017FBE /* UserStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserStateManager.swift; path = /Users/leery/Desktop/Test/Levarti/Levarti/ViewModels/UserStateManager.swift; sourceTree = "<absolute>"; };
+		920F635E23E789A5009CC02E /* Levarti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Levarti.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		920F636123E789A5009CC02E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		920F636823E789A5009CC02E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		920F636A23E789A8009CC02E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		920F636D23E789A8009CC02E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		920F636F23E789A8009CC02E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		920F637923E7C3FA009CC02E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		920F637B23E7C848009CC02E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		920F637D23E7CE7D009CC02E /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		920F637F23E7CE8F009CC02E /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		920F638123E7CF58009CC02E /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		920F638323E7D003009CC02E /* PhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewModel.swift; sourceTree = "<group>"; };
+		BB1B7A1295B4D78982254B39 /* Pods-Levarti.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Levarti.release.xcconfig"; path = "Target Support Files/Pods-Levarti/Pods-Levarti.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		920F635B23E789A5009CC02E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9587ADAFF3DF8EE4755AB212 /* Pods_Levarti.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CD2B587EF830C2DBF52256C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21FDD7348230EE6CE77D165C /* Pods_Levarti.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4044F44148106A7B2B0D39A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7FECC9AEFF0B7EE336B91197 /* Pods-Levarti.debug.xcconfig */,
+				BB1B7A1295B4D78982254B39 /* Pods-Levarti.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		920723A523E7DCC700017FBE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				920723A623E7DCD100017FBE /* PhotoCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		920F635523E789A5009CC02E = {
+			isa = PBXGroup;
+			children = (
+				920F636023E789A5009CC02E /* Levarti */,
+				920F635F23E789A5009CC02E /* Products */,
+				4044F44148106A7B2B0D39A4 /* Pods */,
+				1CD2B587EF830C2DBF52256C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		920F635F23E789A5009CC02E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				920F635E23E789A5009CC02E /* Levarti.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		920F636023E789A5009CC02E /* Levarti */ = {
+			isa = PBXGroup;
+			children = (
+				920723A523E7DCC700017FBE /* Views */,
+				920F637623E7C3E9009CC02E /* Controllers */,
+				920F637523E7C3E9009CC02E /* Models */,
+				920F637823E7C3E9009CC02E /* Services */,
+				920F637723E7C3E9009CC02E /* ViewModels */,
+				920F636123E789A5009CC02E /* AppDelegate.swift */,
+				920723A823E9013D00017FBE /* UserStateManager.swift */,
+				920F636723E789A5009CC02E /* Main.storyboard */,
+				920F636A23E789A8009CC02E /* Assets.xcassets */,
+				920F636C23E789A8009CC02E /* LaunchScreen.storyboard */,
+				920F636F23E789A8009CC02E /* Info.plist */,
+			);
+			path = Levarti;
+			sourceTree = "<group>";
+		};
+		920F637523E7C3E9009CC02E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				920F637F23E7CE8F009CC02E /* Photo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		920F637623E7C3E9009CC02E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				920F637923E7C3FA009CC02E /* LoginViewController.swift */,
+				920F637D23E7CE7D009CC02E /* PhotosViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		920F637723E7C3E9009CC02E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				920F637B23E7C848009CC02E /* LoginViewModel.swift */,
+				920F638323E7D003009CC02E /* PhotosViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		920F637823E7C3E9009CC02E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				920F638123E7CF58009CC02E /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		920F635D23E789A5009CC02E /* Levarti */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 920F637223E789A8009CC02E /* Build configuration list for PBXNativeTarget "Levarti" */;
+			buildPhases = (
+				CA18D0F605DBDB1850152BAC /* [CP] Check Pods Manifest.lock */,
+				920F635A23E789A5009CC02E /* Sources */,
+				920F635B23E789A5009CC02E /* Frameworks */,
+				920F635C23E789A5009CC02E /* Resources */,
+				5E502C733A807BD77171CD8A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Levarti;
+			productName = Levarti;
+			productReference = 920F635E23E789A5009CC02E /* Levarti.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		920F635623E789A5009CC02E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Lee, Ryan";
+				TargetAttributes = {
+					920F635D23E789A5009CC02E = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 920F635923E789A5009CC02E /* Build configuration list for PBXProject "Levarti" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 920F635523E789A5009CC02E;
+			productRefGroup = 920F635F23E789A5009CC02E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				920F635D23E789A5009CC02E /* Levarti */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		920F635C23E789A5009CC02E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				920F636E23E789A8009CC02E /* LaunchScreen.storyboard in Resources */,
+				920F636B23E789A8009CC02E /* Assets.xcassets in Resources */,
+				920F636923E789A5009CC02E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E502C733A807BD77171CD8A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Levarti/Pods-Levarti-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Levarti/Pods-Levarti-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Levarti/Pods-Levarti-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA18D0F605DBDB1850152BAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Levarti-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		920F635A23E789A5009CC02E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				920F638023E7CE8F009CC02E /* Photo.swift in Sources */,
+				920723A723E7DCD100017FBE /* PhotoCell.swift in Sources */,
+				920F638223E7CF58009CC02E /* APIService.swift in Sources */,
+				920723A923E9013D00017FBE /* UserStateManager.swift in Sources */,
+				920F637E23E7CE7D009CC02E /* PhotosViewController.swift in Sources */,
+				920F637C23E7C848009CC02E /* LoginViewModel.swift in Sources */,
+				920F637A23E7C3FA009CC02E /* LoginViewController.swift in Sources */,
+				920F636223E789A5009CC02E /* AppDelegate.swift in Sources */,
+				920F638423E7D003009CC02E /* PhotosViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		920F636723E789A5009CC02E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				920F636823E789A5009CC02E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		920F636C23E789A8009CC02E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				920F636D23E789A8009CC02E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		920F637023E789A8009CC02E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		920F637123E789A8009CC02E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		920F637323E789A8009CC02E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FECC9AEFF0B7EE336B91197 /* Pods-Levarti.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Levarti/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.leery.Levarti;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		920F637423E789A8009CC02E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB1B7A1295B4D78982254B39 /* Pods-Levarti.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Levarti/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.leery.Levarti;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		920F635923E789A5009CC02E /* Build configuration list for PBXProject "Levarti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				920F637023E789A8009CC02E /* Debug */,
+				920F637123E789A8009CC02E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		920F637223E789A8009CC02E /* Build configuration list for PBXNativeTarget "Levarti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				920F637323E789A8009CC02E /* Debug */,
+				920F637423E789A8009CC02E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 920F635623E789A5009CC02E /* Project object */;
+}
